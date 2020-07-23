@@ -1,0 +1,57 @@
+                    HWTC OpenGrok Manual
+=======================================================================
+
+!!! WARNING !!!
+Read this carefully before putting new sourcecode into opengrok!
+Contact admin(Yulong Cai<yulongc@hwtc.com.cn> if you have any questions!
+
+Authentication
+--------------
+
+The opengrok web server has no authentication to the user accessing it,
+thus all source code indexed by opengrok are accessable by all user in
+our company local network (user outside of company local network are
+unable to access this opengrok website).
+
+
+Sourcecode Rules
+----------------
+DO NOT:
+    - put hwtc's private sourcecode into opengrok! 
+    - put opensource projects modified by hwtc's developers into opengrok!
+
+You CAN:
+    - put unmodified opensource project into opengrok! 
+
+
+Deploy New Sourcecode
+---------------------
+
+1. Download source code
+
+Download source code into a single directory located under /var/opengrok/src/
+	e.g. 
+	cd /var/opengrok/src
+	git clone https://github.com/torvalds/linux.git
+
+2. Deploy source code
+The opengrok-deploy.sh located under /var/opengrok/ directory is used for deploying
+a new source code project, you must run as root to execute this script.
+
+sudo /var/opengrok/opengrok-deploy.sh <directory-name-of-the-new-project>
+
+	e.g.
+	sudo /var/opengrok/opengrok-deploy.sh linux
+
+Upgrading opengrok index
+-------------------------
+
+The opengrok-deploy.sh will do the first index for the source code, if you need to
+upgrade your source code you may try opengrok-index.sh.
+
+Generally, there are two steps:1. upgrade your source code; 2. run opengrok-index.sh to start indexing.
+	
+	sudo /var/opengrok/opengrok-index.sh <directory-name-of-your-sourcecode>
+
+END
+
