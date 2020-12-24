@@ -1,31 +1,5 @@
-                    HWTC OpenGrok Manual
+                    OpenGrok Manual
 =======================================================================
-
-!!! WARNING !!!
-Read this carefully before putting new sourcecode into opengrok!
-Contact admin(Yulong Cai<yulongc@hwtc.com.cn> if you have any questions!
-
-The HWTC opengrok website is currently hosted in 10.1.1.100, you can visit
-it in your favourite web browser.
-
-Authentication
---------------
-
-The opengrok web server has no authentication to the user accessing it,
-thus all source code indexed by opengrok are accessable by all user in
-our company local network (user outside of company local network are
-unable to access this opengrok website).
-
-
-Sourcecode Rules
-----------------
-DO NOT:
-    - put hwtc's private sourcecode into opengrok! 
-    - put opensource projects modified by hwtc's developers into opengrok!
-
-You CAN:
-    - put unmodified opensource project into opengrok! 
-
 
 Deploy New Sourcecode
 ---------------------
