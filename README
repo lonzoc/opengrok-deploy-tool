@@ -30,5 +30,11 @@ Generally, there are two steps:1. upgrade your source code; 2. run opengrok-inde
 	
 	sudo /var/opengrok/opengrok-index.sh <directory-name-of-your-sourcecode>
 
+OpenGrok Opensource Project
+---------------------------
+Repo:
+	git@github.com:oracle/opengrok.git
+	https://github.com/oracle/opengrok
+
 END
 
