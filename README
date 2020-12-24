@@ -32,6 +32,8 @@ Generally, there are two steps:1. upgrade your source code; 2. run opengrok-inde
 
 OpenGrok Opensource Project
 ---------------------------
+Website:
+	https://oracle.github.io/opengrok/
 Repo:
 	git@github.com:oracle/opengrok.git
 	https://github.com/oracle/opengrok
